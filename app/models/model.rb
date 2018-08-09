@@ -5,19 +5,26 @@ def emotion_hash(emotion)
       # in each of these you call the emotion and when that emotion is called the quotes will also be called, you need to also call the quotes seperately
         :sad => 
           {:quote1 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578283/small/1533152964/enhance", 
-            :quote2 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance"},
+            :quote2 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance",
+            :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance",
+            :spotify => "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DXdPec7aLTmlC"
+          },
             
             #
             
         :stressed => 
           {:quote1 =>"https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance", 
-            :quote2 => "https://titular-journal.com/wp-content/uploads/2018/03/stress-quotes-fascinating-best-25-stress-quotes-ideas-on-pinterest-do-not-worry-quotes.jpg"},
+            :quote2 => "https://titular-journal.com/wp-content/uploads/2018/03/stress-quotes-fascinating-best-25-stress-quotes-ideas-on-pinterest-do-not-worry-quotes.jpg",
+            :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance",
+            :spotify => "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX1s9knjP51Oa"},
             
             #
             
          :unmotivated => 
           {:quote1 => "http://cdn.thefunnybeaver.com/wp-content/uploads/2017/04/Motivational-Quotes-For-Success-227.jpg", 
-            :quote2 => "http://cdn.thefunnybeaver.com/wp-content/uploads/2017/04/Motivational-Quotes-For-Success-234.jpg"}
+            :quote2 => "http://cdn.thefunnybeaver.com/wp-content/uploads/2017/04/Motivational-Quotes-For-Success-234.jpg",
+            :quote3 => "https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021046597450/media/113994578275/small/1533152964/enhance",
+            :spotify => "https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DXdxcBWuJkbcy"}
           
     } #end of popup hash
     
@@ -34,10 +41,6 @@ def emotion_hash(emotion)
   if emotion == "unmotivated"
     return @popups[:unmotivated]
   end 
-    
-  # else
-  #   #return popups[]
-  # end
     
 end #emotion hash end
 

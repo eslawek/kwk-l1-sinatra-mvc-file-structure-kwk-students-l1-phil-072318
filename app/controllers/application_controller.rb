@@ -23,6 +23,8 @@ class ApplicationController < Sinatra::Base
     @quotes = emotion_hash(params[:emotion])
     @quote1 = @quotes[:quote1]
     @quote2 = @quotes[:quote2]
+    @quote3 = @quotes[:quote3]
+    @spotify = @quotes[:spotify]
     erb :results
     end
   
